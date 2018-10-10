@@ -56,6 +56,53 @@ header#top .container .row {
     font-family: cera_pro_light, sans-serif;
 }
 
+.slider-home{
+    padding: 50px 9% !important;
+}
+
+.metaslider .slides img{
+    width: 100% !important;
+    padding-top: 350px !important;
+}
+
+.metaslider .caption-wrap{
+    background: none !important;
+    bottom: unset !important;
+    display: flex !important;
+    justify-content: center;
+    opacity: 1 !important;
+    top: 0;
+}
+
+.metaslider .caption-wrap h1,
+.metaslider .caption-wrap span{
+    color: black;
+}
+
+.metaslider .caption-wrap h1{
+    font-size: 72px;
+    line-height: 90px;
+    margin-bottom: 20px;
+}
+
+.metaslider .caption-wrap span{
+    font-size: 36px;
+    padding-left: 50px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.metaslider .caption-wrap span::before{
+    content: "";
+    border-top: 2px solid black;
+    left: 0;
+    position: absolute;
+    top: 37px;
+    width: 40px;
+    z-index: -1;
+}
+
+
 /* Page Home Trois partie */
 #title_row{
     z-index: 999;
@@ -84,4 +131,24 @@ header#top .container .row {
 .divider-2 .wpb_wrapper p,
 .divider-3 .wpb_wrapper p{
     margin-top: 35px;
+}
+
+
+
+.flex-center > .col{
+    display: flex;
+    align-items: center;
+}
+
+
+.reduce-img{
+    transform: scale(0.75) !important;
+}
+
+
+
+/* Page Service */
+.tabs-services .wpb_column .column-inner[data-bg-cover="true"], 
+.tabs-services .wpb_column[data-bg-cover="true"]{
+    background-position: unset;
 }
