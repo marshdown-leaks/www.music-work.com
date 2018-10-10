@@ -1,0 +1,70 @@
+/*
+Theme Name: Music Work
+Description: Theme enfant de Salient 
+Author: Music Work
+Author URI: http://music-work.com
+Template: salient
+Version: 0.1.0
+*/
+
+
+/* Header */
+header#top .container .row {
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+
+/* Weglot */
+
+.country-selector.weglot-inline.weglot-default{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    bottom: 32% !important;
+}
+
+
+/* Slider Home */
+.nectar_fullscreen_zoom_recent_projects .project-slide .project-info h1{
+    /* font-size: 85px !important; */
+    margin-left: 0 !important;
+    max-width: 900px !important;
+    text-align: center;
+}
+.project-info .container h1 > span:first-child{
+    font-family: cera_pro_bold, sans-serif;
+}
+
+.project-info .container h1 > span{
+    font-family: cera_pro_light, sans-serif;
+}
+
+/* Page Home Trois partie */
+#title_row{
+    z-index: 999;
+}
+.divider-1 .wpb_wrapper,
+.divider-2 .wpb_wrapper,
+.divider-3 .wpb_wrapper{
+    position: relative;
+}
+
+.divider-1 .divider-wrap:first-child,
+.divider-2 .divider-wrap:first-child,
+.divider-3 .divider-wrap:first-child{
+    position: absolute;
+    width: 100%;
+}
+
+.divider-1 .divider-wrap:first-child > div,
+.divider-2 .divider-wrap:first-child > div,
+.divider-3 .divider-wrap:first-child > div{
+    margin-top: 0 !important;
+    transition: all 1s;
+}
+
+.divider-1 .wpb_wrapper p,
+.divider-2 .wpb_wrapper p,
+.divider-3 .wpb_wrapper p{
+    margin-top: 35px;
+}

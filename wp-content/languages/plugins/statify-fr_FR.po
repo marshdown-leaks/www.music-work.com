@@ -1,0 +1,80 @@
+# Translation of Plugins - Statify - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Statify - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-10-20 16:20:54+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Statify - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://pluginkollektiv.org"
+msgstr "https://pluginkollektiv.org"
+
+#. Author of the plugin/theme
+msgid "pluginkollektiv"
+msgstr "pluginkollektiv"
+
+#. Description of the plugin/theme
+msgid "Compact, easy-to-use and privacy-compliant stats plugin for WordPress."
+msgstr "Une extension de statistique légère, facile d’utilisation et respectueuse de la sphère privée."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/statify"
+msgstr "https://wordpress.org/plugins/statify"
+
+#. Plugin Name of the plugin/theme
+msgid "Statify"
+msgstr "Statify"
+
+#: views/widget_front.view.php:59
+msgid "Top referers"
+msgstr "Meilleurs référents"
+
+#: views/widget_front.view.php:33
+msgid "Top targets"
+msgstr "Meilleurs contenus"
+
+#: views/widget_front.view.php:15
+msgid "No data available."
+msgstr "Aucune donnée disponible."
+
+#: views/widget_back.view.php:42
+msgid "recommended if caching is in use"
+msgstr "recommandé si vous utilisez une extension de cache"
+
+#: views/widget_back.view.php:41
+msgid "Page tracking via JavaScript"
+msgstr "Suivi des pages vues par JavaScript"
+
+#: views/widget_back.view.php:36
+msgid "Entries in top lists only for today"
+msgstr "Entrées dans la top liste pour aujourd'hui uniquement"
+
+#: views/widget_back.view.php:31
+msgid "Number of entries in top lists"
+msgstr "Nombre d’entrées dans la top liste"
+
+#: views/widget_back.view.php:20
+msgid "Period of data saving"
+msgstr "Période de sauvegarde des données"
+
+#: views/widget_back.view.php:16
+msgid "days"
+msgstr "jours"
+
+#: inc/statify_dashboard.class.php:164
+msgid "Pageviews"
+msgstr "Pages vues"
+
+#: inc/statify_dashboard.class.php:163
+msgid "Pageview"
+msgstr "Page vue"
+
+#: inc/statify_backend.class.php:74
+msgid "Settings"
+msgstr "Réglages"
