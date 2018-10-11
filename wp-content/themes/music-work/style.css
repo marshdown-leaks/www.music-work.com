@@ -8,6 +8,41 @@ Version: 0.1.0
 */
 
 
+/* GENERAL */
+.aside-left{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: -80px;
+}
+
+.aside-left::before{
+    content: "";
+    position: absolute;
+    left: -40px;
+    border-top: 2px solid #000;
+    top: 12px;
+    width: 30px;
+    z-index: -1;
+}
+
+.aside-services{
+    top: 130%;
+}
+
+.aside-works{
+    top: 300%;
+}
+
+.aside-who{
+    top: 180%;
+    left: -124px;
+}
+
 /* Header */
 header#top .container .row {
     margin-left: 5%;
@@ -151,4 +186,16 @@ header#top .container .row {
 .tabs-services .wpb_column .column-inner[data-bg-cover="true"], 
 .tabs-services .wpb_column[data-bg-cover="true"]{
     background-position: unset;
+}
+
+.bloc-expand{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.expand{
+    display: inline-block !important;
 }

@@ -24,5 +24,11 @@ jQuery(document).ready(function() {
         $(this).find('.divider-wrap:first-child > div').css("height", "20px");
     });
 
+    $('.bloc-expand').css('display', 'none');
+    $('.accordion .nectar_icon').click(function (e) { 
+        e.preventDefault();
+        $(this).parent().parent().find('.bloc-expand').toggleClass('expand');
+    });
+
 
 });
