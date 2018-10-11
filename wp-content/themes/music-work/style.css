@@ -39,7 +39,7 @@ Version: 0.1.0
 }
 
 .aside-who{
-    top: 180%;
+    top: 185%;
     left: -124px;
 }
 
@@ -77,6 +77,7 @@ header#top .container .row {
 
 
 /* Slider Home */
+
 .nectar_fullscreen_zoom_recent_projects .project-slide .project-info h1{
     /* font-size: 85px !important; */
     margin-left: 0 !important;
@@ -198,4 +199,23 @@ header#top .container .row {
 
 .expand{
     display: inline-block !important;
+}
+
+.nectar_icon_wrap{
+    text-align: right;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and ( min-height: 1500px ){
+    .section-1{
+        height: 70vh;
+    }
+}
+
+@media screen and ( max-height: 1500px ){
+    .section-1{
+        height: 85vh;
+    }
 }
