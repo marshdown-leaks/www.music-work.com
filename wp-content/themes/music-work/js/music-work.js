@@ -1,6 +1,24 @@
 jQuery(document).ready(function() {
 
     var $ = jQuery;
+    if (!sessionStorage.isVisited) {
+        sessionStorage.isVisited = 'true';
+        $('#preloader').delay(5000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $('body').delay(5000).css({'overflow':'visible'});
+        setTimeout(function(){
+            $('.home .country-selector').css("opacity", "1");
+            $('.home nav, .home #logo').css("opacity", "1");
+            $('.home header').css("background", "#fff");
+        }, 5000);
+    }else{
+        $('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $('body').delay(500).css({'overflow':'visible'});
+        setTimeout(function(){
+            $('.home .country-selector').css("opacity", "1");
+            $('.home nav, .home #logo').css("opacity", "1");
+            $('.home header').css("background", "#fff");
+        }, 500);
+    }
 
     $('.divider-1 .divider-wrap:first-child > div').css('height', '20px');
     $('.divider-2 .divider-wrap:first-child > div').css('height', '20px');
@@ -29,6 +47,4 @@ jQuery(document).ready(function() {
         e.preventDefault();
         $(this).parent().parent().find('.bloc-expand').toggleClass('expand');
     });
-
-
 });
