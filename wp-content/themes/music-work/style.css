@@ -140,6 +140,7 @@ header#top .container .row {
 
 
 /* Page Home Trois partie */
+
 #title_row{
     z-index: 999;
 }
@@ -212,10 +213,20 @@ header#top .container .row {
     .section-1{
         height: 70vh;
     }
+
+    .home-intro{
+        padding-top: 150px;
+    }
 }
 
 @media screen and ( max-height: 1500px ){
     .section-1{
         height: 85vh;
+    }
+}
+
+@media screen and ( max-height: 875px ){
+    .home-intro{
+        padding-top: 200px;
     }
 }
