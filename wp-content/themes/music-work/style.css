@@ -57,6 +57,10 @@ padding-bottom: 0;
     background-color: #161616;
 }
 
+.no-padding{
+    padding: 0 !important;
+}
+
 /* Preloader */
 #preloader {
     top: 0;
@@ -242,10 +246,18 @@ header#top .container .row {
 .nectar_icon_wrap{
     text-align: right;
     width: 100%;
+    cursor: pointer;
 }
+
+.accordion-right .nectar_icon_wrap{
+    text-align: left; }
 
 .reduce-img-portrait{
     width: 75%;
+}
+
+.right-service-img{
+    left: -6%;
 }
 
 /* RESPONSIVE */
