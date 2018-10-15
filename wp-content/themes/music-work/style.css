@@ -54,11 +54,15 @@ padding-bottom: 0;
 }
 
 .home header{
-    background-color: #161616;
+    background-color: #000000;
 }
 
 .no-padding{
     padding: 0 !important;
+}
+
+.flip-box-back .inner p{
+    white-space: nowrap;
 }
 
 /* Preloader */
@@ -67,7 +71,7 @@ padding-bottom: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #161616;
+    background-color: #000;
     z-index: 9999;
   }
   
@@ -77,11 +81,11 @@ padding-bottom: 0;
     position: fixed;
     left: 0;
     top: 0;
-    background-image: url(http://imac-de-kevin.home/wp-content/uploads/2018/10/video-musicwork-load_03.gif);
-    background-color: #161616;
+    background-image: url(/wp-content/uploads/2018/10/preloader.gif);
+    background-color: #000;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 672px 462px;
+    background-size: 892px 771px;
   }
 
 /* Header */
@@ -258,6 +262,13 @@ header#top .container .row {
 
 .right-service-img{
     left: -6%;
+}
+
+.innovation > div > div{
+    background-position: center !important;
+}
+.creation > div > div{
+    background-position: right !important;
 }
 
 /* RESPONSIVE */
