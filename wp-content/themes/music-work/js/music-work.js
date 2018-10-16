@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     var $ = jQuery;
     if (!sessionStorage.isVisited) {
         sessionStorage.isVisited = 'true';
-        $('#preloader').delay(5000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $('#preloader').delay(5000).fadeOut('slow');
         $('body').delay(5000).css({'overflow':'visible'});
         setTimeout(function(){
             $('.home .country-selector').css("opacity", "1");
@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
             $('.home header').css("background", "#fff");
         }, 5000);
     }else{
-        $('#preloader').fadeOut('slow'); // will fade out the white DIV that covers the website. 
+        $('#preloader').fadeOut('slow');
         $('body').css({'overflow':'visible'});
         setTimeout(function(){
             $('.home .country-selector').css("opacity", "1");
