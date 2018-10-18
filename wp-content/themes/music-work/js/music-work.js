@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
         setTimeout(function(){
             $('.home .country-selector').css("opacity", "1");
             $('.home nav, .home #logo').css("opacity", "1");
-            $('.home header').css("background", "#fff");
+            $('.home header, .home #header-outer').css("background", "#fff");
         }, 5000);
     }else{
         $('#preloader').fadeOut('slow');
@@ -16,7 +16,7 @@ jQuery(document).ready(function() {
         setTimeout(function(){
             $('.home .country-selector').css("opacity", "1");
             $('.home nav, .home #logo').css("opacity", "1");
-            $('.home header').css("background", "#fff");
+            $('.home header, .home #header-outer').css("background", "#fff");
         }, 1);
     }
 

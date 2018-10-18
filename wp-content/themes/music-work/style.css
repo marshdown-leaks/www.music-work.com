@@ -53,7 +53,8 @@ padding-bottom: 0;
     opacity: 0;
 }
 
-.home header{
+.home header,
+.home #header-outer{
     background-color: #000000;
 }
 
@@ -65,15 +66,56 @@ padding-bottom: 0;
     white-space: nowrap;
 }
 
+.m15{
+    margin: 0 15% !important;
+}
+
+.p30{
+    padding: 0 30% !important;
+}
+
+.pl-10{
+    padding-left: 10% !important;
+}
+.pl-20{
+    padding-left: 20% !important;
+}
+.pl-30{
+    padding-left: 30% !important;
+}
+
+.pl-40{
+    padding-left: 40% !important;
+}
+.pl-50{
+    padding-left: 50% !important;
+}
+
 .pl-25{
     padding-left: 25% !important;
+}
+
+.pr-17{
+    padding-right: 17% !important;
+}
+
+.pr-10{
+    padding-right: 10% !important;
+}
+.pr-20{
+    padding-right: 20% !important;
 }
 
 .pr-25{
     padding-right: 25% !important;
 }
-.pr-17{
-    padding-right: 17% !important;
+
+.pr-30{
+    padding-right: 30% !important;
+}
+
+.pr-50{
+    padding-right: 50% !important;
 }
 
 /* Preloader */
@@ -241,6 +283,15 @@ header#top .container .row {
 
 
 /* Page Service */
+.tabs-services .tabbed > ul::after{
+    content: none;
+}
+
+.tabs-services ul{
+    display: flex;
+    justify-content: space-around;
+}
+
 .tabs-services .wpb_column .column-inner[data-bg-cover="true"], 
 .tabs-services .wpb_column[data-bg-cover="true"]{
     background-position: unset;
@@ -279,14 +330,20 @@ header#top .container .row {
 }
 
 .innovation > div > div{
-    background-position: center !important;
+    background-size: 360px;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 .creation > div > div{
-    background-position: right !important;
+    background-position: right top;
+    background-size: 360px;
+    background-repeat: no-repeat;
 }
 
 .background-left-agency > div > div{
-    background-position-x: 20px !important;
+    background-size: 360px;
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 
 @keyframes show {
@@ -404,6 +461,16 @@ header#top .container .row {
 /* RESPONSIVE Width */
 
 @media screen and (max-width: 1450px){}
+@media screen and (max-width: 1066px){
+    .tabs-services ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabs-services ul li a{
+        margin: 0 !important;
+    }
+}
 
 @media screen and ( max-width: 1024px){
     aside,
@@ -435,10 +502,14 @@ header#top .container .row {
         justify-content: center;
     }
 
-    .creation > div > div{
+    .creation > div > div,
+    {
         background-position: 82% !important;
-        background-size: 1600px !important;
         background-repeat: no-repeat;
+    }
+
+    .vc_custom_1539345130035{
+        padding-left: 0 !important;
     }
     
 
@@ -472,22 +543,99 @@ header#top .container .row {
     
 }
 
-@media screen and (max-width: 864px){
-    
-}
-@media screen and (max-width: 700px){
-    #footer-widgets .container .col.span_4{
-        width: 100%;
+@media screen and (max-width: 999px){
+    .tabs-services ul{
+        justify-content: stretch;
+    }
+
+    .p30{
+        padding: 0 !important;
+    }
+
+    .pl-10,
+    .pl-30,
+    .pl-40,
+    .pl-50{
+        padding-left: 0 !important;
+    }
+
+    .pr-10,
+    .pr-20,
+    .pr-50{
+        padding-right: 0 !important;
+    }
+
+    .innovation > div > div,
+    .creation > div > div,
+    .background-left-agency > div > div{
+        background-position: center top;
+        background-size: contain
+    }
+
+    .contact-info > .col{
+        display: flex;
+        justify-content: end;
+    }
+
+    .contact-info > .col > div:first-child,
+    .contact-info > .col > div:last-child{ 
+        display: none !important;
     }
 
     #footer-outer .widget{
         margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 864px){
+    
+}
+@media screen and (max-width: 700px){
+    #background{
+        background-size: contain;
+    }
+
+    #footer-widgets .container .col.span_4{
+        width: 100%;
     }
 
     #footer-widgets #custom_html-2 > div,
     #footer-widgets .container .row > div:last-child{
         text-align: center;
     }
+
+    .tabs-services ul{
+        flex-wrap: wrap;
+        justify-content: unset;
+        margin-left: 25% !important;
+    }
+
+    .m15{
+        margin: 0 !important;
+    }
+
+    .innovation > div > div,
+    .creation > div > div,
+    .background-left-agency > div > div{
+        background-size: 300px;
+    }
+
+    .contact-info > .col{
+        flex-wrap: wrap;
+    }
+
+    .contact-info > .col .address,
+    .contact-info > .col .contact-us{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-info > .col .address p:first-child,
+    .contact-info > .col .contact-us p:first-child{
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 600px){
@@ -498,8 +646,17 @@ header#top .container .row {
         font-size: 70px !important;
     }
 }
+@media screen and (max-width: 479px){
+    .tabs-services ul{
+        margin-left: 16% !important; 
+    }
+}
 @media screen and (max-width: 400px){
     h1.vc_custom_heading{
         font-size: 60px !important;
+    }
+
+    .material .wpb_content_element{
+        margin: 0 !important;
     }
 }
