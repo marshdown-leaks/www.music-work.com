@@ -9,6 +9,10 @@ Version: 0.1.0
 
 
 /* GENERAL */
+.bold, strong, b{
+    font-family: 'cera_pro_medium' !important;
+}
+
 .aside-left{
     position: absolute;
     top: 50%;
@@ -70,6 +74,21 @@ padding-bottom: 0;
     margin: 0 15% !important;
 }
 
+.ml30-n{
+    margin-left: -30% !important;
+}
+
+.p7{
+    padding: 0 7%;
+}
+
+.p10{
+    padding: 0 20%;
+}
+.p20{
+    padding: 0 20%;
+}
+
 .p30{
     padding: 0 30% !important;
 }
@@ -116,6 +135,10 @@ padding-bottom: 0;
 
 .pr-50{
     padding-right: 50% !important;
+}
+
+.en-tete{
+    margin-top: -40px;
 }
 
 /* Preloader */
@@ -203,7 +226,8 @@ header#top .container .row {
     background: none !important;
     bottom: unset !important;
     display: flex !important;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 20%;
     opacity: 1 !important;
     top: 0;
 }
@@ -215,7 +239,7 @@ header#top .container .row {
 
 .metaslider .caption-wrap h1{
     font-size: 72px;
-    line-height: 90px;
+    line-height: 72px;
     margin-bottom: 20px;
 }
 
@@ -289,7 +313,8 @@ header#top .container .row {
 
 .tabs-services ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .tabs-services .wpb_column .column-inner[data-bg-cover="true"], 
@@ -309,7 +334,7 @@ header#top .container .row {
 }
 
 .icon-left .nectar_icon_wrap{
-    text-align-last: left;
+    text-align: left;
 }
 
 .nectar_icon_wrap{
@@ -329,21 +354,42 @@ header#top .container .row {
     left: -6%;
 }
 
+.tabs-services{
+    margin-top: 50px;
+}
+
 .innovation > div > div{
     background-size: 360px;
     background-position: center top;
     background-repeat: no-repeat;
 }
 .creation > div > div{
-    background-position: right top;
+    background-position: 81% top;
     background-size: 360px;
     background-repeat: no-repeat;
 }
 
 .background-left-agency > div > div{
     background-size: 360px;
-    background-position: left top;
+    background-position: 20% top;
     background-repeat: no-repeat;
+}
+
+.retail{
+    margin-top: -30px;
+}
+
+.cta-playlist{
+    background-size: contain;
+    padding: 3% 0 !important;
+}
+
+.cta-playlist h6{
+    margin-bottom: 0 !important;
+}
+
+.cta-playlist .vc_column-inner{
+    margin-bottom: 0 !important;
 }
 
 @keyframes show {
@@ -397,6 +443,33 @@ header#top .container .row {
     }
 }
 
+/* PAGE WORKS */
+
+.intertitre-works p{
+    padding-bottom: 5px;
+}
+
+.btn.loadMoreBtn {
+	background: #eec6c8;
+    color: white !important;
+    padding: 26px 28px;
+    border-radius: 50%;
+    position: relative;
+    left: 45%;
+}
+
+#bottom-works div{
+    display: none;
+}
+
+/* PAGE CONTACT */
+
+.contact-us p:nth-child(2){
+    padding-bottom: 5px;
+}
+
+/* FOOTER */
+
 #footer-widgets #custom_html-2 > div{
     text-align: right;
 }
@@ -447,7 +520,7 @@ header#top .container .row {
 @media screen and ( max-height: 850px ){
     .metaslider .caption-wrap h1{
         font-size: 8vh;
-        line-height: 8vh;
+        line-height: 6vh;
     }
 }
 
@@ -497,11 +570,55 @@ header#top .container .row {
     }
 }
 
-/* RESPONSIVE Width */
 
+@media screen and (min-width: 1000px) and (max-height: 780px){
+    .metaslider .slides img{
+        width: 95% !important;
+        position: relative;
+        left: 5%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-height: 760px){
+    .metaslider .slides img{
+        width: 85% !important;
+        position: relative;
+        left: 10%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-height: 730px){
+    .metaslider .slides img{
+        width: 75% !important;
+        position: relative;
+        left: 14%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-height: 700px){
+    .metaslider .slides img{
+        width: 65% !important;
+        position: relative;
+        left: 20%;
+    }
+}
+
+/* RESPONSIVE Width */
 @media screen and (min-width: 1024px){
     #media_image-2{
         width: 40%;
+    }
+}
+@media screen and (max-width: 1470px){
+    .metaslider .caption-wrap{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 1330px){
+    .metaslider .caption-wrap{
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 1260px){
+    .metaslider .caption-wrap{
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 1066px){
@@ -523,7 +640,7 @@ header#top .container .row {
 
     #footer-outer .row{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -595,6 +712,13 @@ header#top .container .row {
         justify-content: stretch;
     }
 
+    .ml30-n{
+        margin: 0 !important;
+    }
+
+    .p7,
+    .p14,
+    .p20,
     .p30{
         padding: 0 !important;
     }
@@ -609,6 +733,7 @@ header#top .container .row {
     .pr-10,
     .pr-17,
     .pr-20,
+    .pr-30,
     .pr-50{
         padding-right: 0 !important;
     }
@@ -630,9 +755,42 @@ header#top .container .row {
         display: none !important;
     }
 
-    .metaslider .caption-wrap h1{
-        font-size: 6vw;
+    .slider-home{
+        padding-top: 0 !important;
     }
+    .metaslider .caption-wrap{
+        padding-left: 0;
+    }
+    .metaslider .caption-wrap h1{
+        font-size: 7vw;
+    }
+
+    .works-left{
+        text-align: left;
+    }
+
+    .works-left p,
+    .works-left h6{
+        padding-left: 4%;
+    }
+
+    .cta-playlist{
+        padding: 6% 0 !important;
+    }
+
+    .accordion{
+        margin-top: -10%;
+    }
+
+    .nectar_icon_wrap{
+        text-align: right !important;
+    }
+
+    .cta-playlist{
+        margin-top: 20px;
+    }
+
+
 }
 
 @media screen and (max-width: 864px){
@@ -652,6 +810,10 @@ header#top .container .row {
         text-align: center;
     }
 
+    .home-intro{
+        padding: 0 !important;
+    }
+
     .tabs-services ul{
         flex-wrap: wrap;
         justify-content: unset;
@@ -663,6 +825,10 @@ header#top .container .row {
     }
     .reduce-img{
         transform: initial !important;
+    }
+
+    .w-resp-70{
+        width: 70%;
     }
 
     .m15{
@@ -691,21 +857,38 @@ header#top .container .row {
         text-align: center;
     }
 
-    .metaslider .slides{
-       /*  overflow-y: hidden; */
+
+    .metaslider .caption-wrap span{
+        font-size: 22px;
+    } 
+
+    .metaslider .caption-wrap span::before{
+        top: 30px;
     }
 
-    .metaslider .slides img{
-        width: unset !important;
-        margin-left: -35% !important;
+    #media_image-2{
+        text-align: center;
+    }
+    #media_image-2 img{
+        width: 60%;
+        margin-bottom: 35px !important;
+    }
+
+    .address .wpb_wrapper p:last-child{
+        position: relative;
+        left: -15%;
     }
 
 }
 
 @media screen and (max-width: 600px){
-    .metaslider .caption-wrap span{
-        font-size: 22px;
-    }           
+    .material .wpb_content_element{
+        margin: 40px 0 0 0 !important;
+    }          
+
+    .btn.loadMoreBtn{
+        left: 40%;
+    }
 }
 @media screen and (max-width: 500px){
     h1.vc_custom_heading{
@@ -722,25 +905,52 @@ header#top .container .row {
     .tabs-services ul{
         margin-left: 16% !important; 
     }
+
+    .retail{
+        margin-top: 0 !important;
+    }
+
+    #fws_5bcdc40272bb0{
+        margin-bottom: 0 !important;
+    }
 }
 @media screen and (max-width: 400px){
     h1.vc_custom_heading{
         font-size: 60px !important;
     }
 
-    .material .wpb_content_element{
-        margin: 0 !important;
-    }
-
     .metaslider .caption-wrap span{
         font-size: 20px;
     }
+    .metaslider .caption-wrap h1{
+        font-size: 6vw;
+    }
 
-    .metaslider .caption-wrap span::before{
-        top: 30px;
+    .metaslider .slides img{
+        padding-top: 200px !important;
     }
 
     .home-intro{
         padding-top: 100px;
+    }
+
+    h3,
+    .mb-20 p{
+        margin-bottom: 20px !important;
+    }
+
+    .team-bloc .nectar-flip-box{
+        margin-bottom: 15px;
+    }
+
+    .nectar-cta h4{
+        margin-top: 15px;
+    }
+
+    .works-left p,
+    .works-right p,
+    .works-left h6,
+    .works-right h6{
+        margin: 15px 0;
     }
 }
