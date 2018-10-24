@@ -449,6 +449,11 @@ header#top .container .row {
     }
 }
 
+/* PAGE QUI SOMMES NOUS */
+.nectar-flip-box .flip-box-back .inner{
+    padding: 60px 0;
+}
+
 /* PAGE WORKS */
 
 .intertitre-works p{
@@ -812,15 +817,23 @@ header#top .container .row {
         margin-top: 20px;
     }
 
-    .nectar-flip-box .flip-box-back .inner{
-        padding: 60px 0;
+    .metaslider .slides img{
+        display: none !important;
     }
 
+    .metaslider .caption-wrap{
+        padding: 60px 0 85px;
+        position: relative !important;
+    }
 
+    .metaslider .caption-wrap h1{
+        font-family: 'cera_pro_medium', sans-serif !important;
+        font-size: calc(28px + 4vw);
+        line-height: 1.2;
+    }
 }
 
 @media screen and (max-width: 864px){
-    
 }
 @media screen and (max-width: 700px){
     #background{
@@ -912,6 +925,11 @@ header#top .container .row {
         margin: 40px 0 0 0 !important;
     }          
 
+    #home-three .wpb_content_element,
+    .works .wpb_content_element{
+        margin: 0 !important;
+    }
+
     .btn.loadMoreBtn{
         left: 40%;
     }
@@ -950,10 +968,18 @@ header#top .container .row {
     }
 
     .metaslider .caption-wrap span{
-        font-size: 20px;
+        font-size: 16px;
+        padding-left: 34px;
     }
+
+    .metaslider .caption-wrap span::before{
+        width: 24px;
+        top: 28px;
+    }
+
     .metaslider .caption-wrap h1{
-        font-size: 6vw;
+        /* font-size: 6vw;
+        line-height: 6vh; */
     }
 
     .metaslider .slides img{
@@ -977,10 +1003,8 @@ header#top .container .row {
         margin-top: 15px;
     }
 
-    .works-left p,
-    .works-right p,
     .works-left h6,
     .works-right h6{
-        margin: 15px 0;
+        margin: 15px 0 !important;
     }
 }
